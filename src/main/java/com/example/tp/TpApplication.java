@@ -29,8 +29,6 @@ public class TpApplication implements CommandLineRunner {
         patientMetier.ajouterPatient("amine", new Date(), 200, false);
         patientMetier.ajouterPatient("moqtad", new Date(), 150, true);
 
-        patientMetier.modifierPatient(new Long(2), "hattab", new Date(), 200, false);
-        patientMetier.supprimerPatient(new Long(4));
 
         patientMetier.consulterAllPatients().forEach(patient -> System.out.println(patient));
     }
